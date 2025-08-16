@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Summaries Hub</title>
+  <style>
+    * {margin:0; padding:0; box-sizing:border-box; font-family:"Poppins",sans-serif;}
+    body {background:linear-gradient(135deg,#0f2027,#203a43,#2c5364); color:#fff; overflow-x:hidden;}
+    header {background:rgba(0,0,0,0.7); padding:15px 50px; display:flex; justify-content:space-between; align-items:center; position:sticky; top:0; z-index:1000;}
+    header h1 {font-size:1.5rem; color:#00e6ff; text-shadow:0 0 10px #00e6ff;}
+    nav a {margin-left:20px; color:#fff; text-decoration:none; transition:0.3s;}
+    nav a:hover {color:#00e6ff;}
+    .hero {text-align:center; padding:100px 20px;}
+    .hero h2 {font-size:3rem; color:#00e6ff; text-shadow:0 0 15px #00e6ff; margin-bottom:20px;}
+    .typing {font-size:1.3rem; color:#ddd; margin-bottom:30px; border-right:2px solid #00e6ff; white-space:nowrap; overflow:hidden; display:inline-block; animation:typing 5s steps(40,end) infinite alternate;}
+    @keyframes typing {from {width:0} to {width:100%}}
+    .hero button {padding:12px 25px; background:#00e6ff; color:#000; border:none; border-radius:25px; cursor:pointer; font-weight:bold; transition:0.3s;}
+    .hero button:hover {background:#fff; color:#00e6ff; box-shadow:0 0 15px #00e6ff;}
+    .books {padding:50px 20px; text-align:center;}
+    .books h2 {font-size:2.5rem; margin-bottom:40px;}
+    .book-list {display:flex; justify-content:center; flex-wrap:wrap; gap:30px;}
+    .book {background:rgba(255,255,255,0.05); padding:20px; border-radius:15px; width:220px; transition:0.3s; box-shadow:0 0 10px rgba(0,0,0,0.5);}
+    .book:hover {transform:translateY(-10px); box-shadow:0 0 20px #00e6ff;}
+    .book img {width:100%; border-radius:10px; margin-bottom:15px;}
+    .book button {background:#00e6ff; color:#000; padding:8px 15px; border:none; border-radius:20px; cursor:pointer; font-weight:bold; transition:0.3s;}
+    .book button:hover {background:#fff; color:#00e6ff;}
+    .about {padding:60px 20px; background:rgba(0,0,0,0.5); text-align:center;}
+    .about h2 {font-size:2.5rem; margin-bottom:20px;}
+    .about p {max-width:800px; margin:0 auto 20px; font-size:1.1rem; color:#ccc;}
+    .about a {color:#00e6ff; text-decoration:none; font-weight:bold;}
+    .features {padding:60px 20px; text-align:center;}
+    .features h2 {font-size:2.5rem; margin-bottom:40px;}
+    .feature-list {display:flex; justify-content:center; flex-wrap:wrap; gap:30px;}
+    .feature {background:rgba(255,255,255,0.05); padding:30px; border-radius:15px; width:250px; transition:0.3s; box-shadow:0 0 10px rgba(0,0,0,0.5);}
+    .feature:hover {box-shadow:0 0 20px #00e6ff; transform:translateY(-10px);}
+    footer {background:linear-gradient(135deg,#203a43,#2c5364); padding:20px; text-align:center; color:#ccc; margin-top:40px;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>📚 Book Hub</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="summaries.html">Summaries</a>
+      <a href="about.html">About</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdDQVbyCEyDv03QfrDQjlMy8it75LlQBgIGALN1eACL7hUFWw/viewform?usp=preview" target="_blank">Submit Summary</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to Book Hub</h2>
+    <p class="typing">“Unlock Knowledge. One Summary at a Time.”</p>
+    <br>
+    <button onclick="location.href='summaries.html'">Explore Summaries</button>
+  </section>
+
+  <section class="books">
+    <h2>Featured Books</h2>
+    <div class="book-list">
+      <div class="book">
+        <img src="https://m.media-amazon.com/images/I/71tbalAHYCL.jpg" alt="Ikigai">
+        <h3>Ikigai</h3>
+        <button onclick="location.href='summary1.html'">Read Summary</button>
+      </div>
+      <div class="book">
+        <img src="https://m.media-amazon.com/images/I/91bYsX41DVL.jpg" alt="Atomic Habits">
+        <h3>Atomic Habits</h3>
+        <button onclick="location.href='summary2.html'">Read Summary</button>
+      </div>
+      <div class="book">
+        <img src="https://m.media-amazon.com/images/I/81s6DUyQCZL.jpg" alt="Think Like a Monk">
+        <h3>Think Like a Monk</h3>
+        <button onclick="location.href='summary3.html'">Read Summary</button>
+      </div>
+      <div class="book">
+        <img src="https://m.media-amazon.com/images/I/71aFt4+OTOL.jpg" alt="The Alchemist">
+        <h3>The Alchemist</h3>
+        <button onclick="location.href='summary4.html'">Read Summary</button>
+      </div>
+      <div class="book">
+        <img src="https://m.media-amazon.com/images/I/81bsw6fnUiL.jpg" alt="Rich Dad Poor Dad">
+        <h3>Rich Dad Poor Dad</h3>
+        <button onclick="location.href='summary5.html'">Read Summary</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <h2>About Us</h2>
+    <p>We are a community of students who believe that <b>reading transforms lives</b>.  
+       Our platform brings the <b>best book summaries</b>—free, simple, and engaging.  
+       Whether it’s productivity, philosophy, or financial wisdom, we’ve got it covered.</p>
+    <p><a href="about.html">Learn more →</a></p>
+  </section>
+
+  <section class="features">
+    <h2>Why Choose Us?</h2>
+    <div class="feature-list">
+      <div class="feature">
+        <h3>🚀 Free Summaries</h3>
+        <p>Access a growing collection of book summaries for free, anytime.</p>
+      </div>
+      <div class="feature">
+        <h3>🎓 Student Friendly</h3>
+        <p>Our summaries are short, clear, and perfect for school & college readers.</p>
+      </div>
+      <div class="feature">
+        <h3>🤖 AI Enhanced</h3>
+        <p>We’re building smart tools to make your learning experience smoother.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Book Hub | Made with ❤️ by Students</p>
+  </footer>
+</body>
+</html>
